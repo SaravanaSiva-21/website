@@ -1,0 +1,187 @@
+body {
+    background: #101014;
+    color: #fafafa;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #17171d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 45px;
+    padding: 15px 35px 10px 35px;
+    box-shadow: 0 2px 6px #0006;
+}
+
+.nav-team{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 42px;
+}
+
+nav{ 
+    display: flex;
+    gap:26px;
+    align-items: center;
+}
+
+.team-name {
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #26e9d5;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a {
+    color: #fafafa;
+    margin: 0 16px;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav a:hover, nav a.active {
+    background: linear-gradient(90deg, #26e9d5 60%, #5f46e8 100%);
+    color: #16181b;
+    box-shadow: 0 0 15px #26e9d5;
+}
+
+.logo-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.logo {
+    display: block;
+    margin: 10px 0px 7px 0px;
+    max-width: 150px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1em;
+    color: #26e9d5;
+    letter-spacing: 1px;
+    margin: 0px 0px 7px 0px;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header, main {
+    width: 90%;
+    margin: auto;
+}
+
+h2, h3 {
+    color: #5f46e8;
+    margin-top: 24px;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+blockquote {
+    font-style: italic;
+    color: #f5b942;
+    border-left: 5px solid #26e9d5;
+    margin: 24px 0;
+    padding-left: 16px;
+}
+
+ul, ol {
+    background: #222129DD;
+    padding: 14px 18px;
+    border-radius: 9px;
+}
+
+input, textarea, button {
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #26e9d5;
+    color: #222129;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5f46e8;
+    color: #fff;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #fff9;
+    border-radius: 50%;
+    opacity: .9;
+    animation: moveStar linear infinite;
+}
+@keyframes moveStar {
+    0% { transform: translateY(0) scale(1);}
+    100% { transform: translateY(900px) scale(0.7);}
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    header, main {
+        width: 98%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 14px;
+    }
+    .team-name {
+        font-size: 1.3em;
+        margin-bottom: 9px;
+    }
+    nav a {
+        margin: 8px 6px;
+        padding: 4px 8px;
+        font-size: 1em;
+    }
+    .logo {
+        max-width: 120px;
+    }
+}
+
+footer {
+    background: #17171d;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 16px 0 8px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    margin-top: 48px;
+    box-shadow: 0 -2px 8px #0004;
+}
+
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    footer {
+        font-size: 0.95em;
+        padding: 10px 0 6px 0;
+    }
+}
